@@ -12,14 +12,6 @@
 #   1. <repo>/ExternalResources/toolchains/mingw-w64-15.2/usr   (canonical)
 #   2. ~/.local/mingw-w64-15.2/usr                              (legacy)
 #
-# RESTORE (if the folder is missing) — download from the Arch Linux Archive
-# and extract each .pkg.tar.zst into ExternalResources/toolchains/mingw-w64-15.2/
-# so the tree looks like <that dir>/usr/{bin,lib,i686-w64-mingw32,...}:
-#   https://archive.archlinux.org/packages/m/mingw-w64-gcc/mingw-w64-gcc-15.2.0-1-x86_64.pkg.tar.zst
-#   https://archive.archlinux.org/packages/m/mingw-w64-binutils/mingw-w64-binutils-2.45-1-x86_64.pkg.tar.zst
-#   https://archive.archlinux.org/packages/m/mingw-w64-crt/mingw-w64-crt-14.0.0-1-any.pkg.tar.zst
-#   https://archive.archlinux.org/packages/m/mingw-w64-headers/mingw-w64-headers-14.0.0-1-any.pkg.tar.zst
-#   https://archive.archlinux.org/packages/m/mingw-w64-winpthreads/mingw-w64-winpthreads-14.0.0-1-any.pkg.tar.zst
 
 set(_TC_CANDIDATES
     "${CMAKE_CURRENT_LIST_DIR}/../../ExternalResources/toolchains/mingw-w64-15.2/usr"

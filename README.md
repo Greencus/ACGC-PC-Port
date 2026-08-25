@@ -93,11 +93,11 @@ pacman -S mingw-w64-i686-gcc mingw-w64-i686-cmake mingw-w64-i686-SDL2 mingw-w64-
 You need to use Mingw GCC 15.2 (newer versions seem to introduce a graphical regression) and you need some other older packages as well. If you cross compile from some other systems you may be fine using the existing mingw toolchain, but if you can't you will need to build a separate environment. To build an environment for compiling and building the program follow these instructions:
 
 Download from the Arch Linux Archive, and extract each .pkg.tar.zst into ExternalResources/toolchains/mingw-w64-15.2/ so the tree looks like ExternalResources/toolchains/mingw-w64-15.2/usr/{bin,lib,i686-w64-mingw32,...}:
-   (Mingw w64 gcc 15.2)[https://archive.archlinux.org/packages/m/mingw-w64-gcc/mingw-w64-gcc-15.2.0-1-x86_64.pkg.tar.zst]
-   (Mingw w64 binutils 2.45)[https://archive.archlinux.org/packages/m/mingw-w64-binutils/mingw-w64-binutils-2.45-1-x86_64.pkg.tar.zst]
-   (Mingw w64 crt 14)[https://archive.archlinux.org/packages/m/mingw-w64-crt/mingw-w64-crt-14.0.0-1-any.pkg.tar.zst]
-   (Mingw w64 headers 14)[https://archive.archlinux.org/packages/m/mingw-w64-headers/mingw-w64-headers-14.0.0-1-any.pkg.tar.zst]
-   (Mingw w64 winpthreads 14)[https://archive.archlinux.org/packages/m/mingw-w64-winpthreads/mingw-w64-winpthreads-14.0.0-1-any.pkg.tar.zst]
+   [Mingw w64 gcc 15.2](https://archive.archlinux.org/packages/m/mingw-w64-gcc/mingw-w64-gcc-15.2.0-1-x86_64.pkg.tar.zst) ,
+   [Mingw w64 binutils 2.45](https://archive.archlinux.org/packages/m/mingw-w64-binutils/mingw-w64-binutils-2.45-1-x86_64.pkg.tar.zst) ,
+   [Mingw w64 crt 14](https://archive.archlinux.org/packages/m/mingw-w64-crt/mingw-w64-crt-14.0.0-1-any.pkg.tar.zst) ,
+   [Mingw w64 headers 14](https://archive.archlinux.org/packages/m/mingw-w64-headers/mingw-w64-headers-14.0.0-1-any.pkg.tar.zst) , 
+   [Mingw w64 winpthreads 14](https://archive.archlinux.org/packages/m/mingw-w64-winpthreads/mingw-w64-winpthreads-14.0.0-1-any.pkg.tar.zst)
    
 #### Build Steps
 

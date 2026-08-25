@@ -104,18 +104,26 @@ Download from the Arch Linux Archive, and extract each .pkg.tar.zst into Externa
 1. Make sure youve got all the required packages
 
 2. Run the correct toolchain in pc/cmake/*
-   <cmake -S pc -B pc/build_32 -DCMAKE_TOOLCHAIN_FILE="$(pwd)/pc/cmake/Toolchain-mingw32.cmake">
+   ```bash
+   cmake -S pc -B pc/build_32 -DCMAKE_TOOLCHAIN_FILE="$(pwd)/pc/cmake/Toolchain-mingw32.cmake">
+   ```
    Then
-   <cmake --build pc/build_32 -j"$(nproc)">
-   if you have the right packages installed **OR** 
-   <cmake -S pc -B pc/build_32 -DCMAKE_TOOLCHAIN_FILE="$(pwd)/pc/cmake/Toolchain-mingw32-gcc152.cmake">
+   ```bash
+   cmake --build pc/build_32 -j"$(nproc)"
+   ```
+   if you have the right packages installed **OR**
+   ``` 
+   cmake -S pc -B pc/build_32 -DCMAKE_TOOLCHAIN_FILE="$(pwd)/pc/cmake/Toolchain-mingw32-gcc152.cmake"
+   ```
    Then
-   <cmake --build pc/build_32 -j"$(nproc)">
+   ```
+   cmake --build pc/build_32 -j"$(nproc)"
+   ```
    if you made a separate environment for compilation packages in ExternalResources.
 
-3. Place your image in the rom folder.
+4. Place your image in the rom folder.
 
-4. Launch the game .exe through a recent version of wine or proton.
+5. Launch the game .exe through a recent version of wine or proton.
 ## Controls
 
 Keyboard bindings are customizable via `keybindings.ini` (next to the executable). Mouse buttons (Mouse1/Mouse2/Mouse3) can also be assigned.

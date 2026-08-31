@@ -105,7 +105,7 @@ Download from the Arch Linux Archive, and extract each .pkg.tar.zst into Externa
 
 2. Run the correct toolchain in pc/cmake/*
    ```bash
-   cmake -S pc -B pc/build_32 -DCMAKE_TOOLCHAIN_FILE="$(pwd)/pc/cmake/Toolchain-mingw32.cmake">
+   cmake -S pc -B pc/build_32 -march=pentium4 -DCMAKE_TOOLCHAIN_FILE="$(pwd)/pc/cmake/Toolchain-mingw32.cmake">
    ```
    Then
    ```bash
@@ -113,7 +113,7 @@ Download from the Arch Linux Archive, and extract each .pkg.tar.zst into Externa
    ```
    if you have the right packages installed **OR**
    ``` 
-   cmake -S pc -B pc/build_32 -DCMAKE_TOOLCHAIN_FILE="$(pwd)/pc/cmake/Toolchain-mingw32-gcc152.cmake"
+   cmake -S pc -B pc/build_32 -march=pentium4  -DCMAKE_TOOLCHAIN_FILE="$(pwd)/pc/cmake/Toolchain-mingw32-gcc152.cmake"
    ```
    Then
    ```
